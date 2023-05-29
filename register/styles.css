@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(fondo_login.png) no-repeat center top;
+    background: url(fondo_register.png) no-repeat center top;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
@@ -16,7 +16,7 @@ body {
     /*Login*/
     body .caja {
         width: 320px;
-        height: 420px;
+        height: 480px;
         background: #FFFFFF;
         top: 50%;
         left: 50%;
@@ -28,7 +28,7 @@ body {
     /*Logo.png*/
     .caja img {
         width: 30%;
-        height: 25%;
+        height: 23%;
         position: absolute;
         top: -50px;
         left: calc(50% - 50px);
@@ -42,14 +42,14 @@ body {
         font-size: 22px;
     }
     /*usuario contrasena*/
-    .caja form .usuario, .caja form .contrasena {
+    .caja form .usuario, .caja form .correo, .caja form .contrasena {
         margin: 0;
         padding: 0;
         font-weight: bold;
         display: block;
     }
     /*Input username password*/
-    .caja form input[type="text"], .caja form input[type="password"] {
+    .caja form input[type="text"], .caja form input[type="email"], .caja form input[type="password"] {
         width: 100%;
         margin-bottom: 20px;
         border: none;
@@ -60,7 +60,7 @@ body {
         color: #000000;
         font-size: 16px;
     }
-    /*Boton ingresar*/
+    /*Boton registrar*/
     .caja form input[type="submit"] {
         width: 100%;
         margin-bottom: 20px;
