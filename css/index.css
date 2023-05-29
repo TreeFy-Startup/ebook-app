@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../login/fondo_login.png) no-repeat center top;
+    background: url(../img/fondo_login.png) no-repeat center top;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
