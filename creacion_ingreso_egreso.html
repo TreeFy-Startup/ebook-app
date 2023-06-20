@@ -861,21 +861,32 @@
             >
               Registro
             </h2>
-          <!-- Cards -->
-          <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
-            <!-- Card -->
-            
-            <!-- Card -->
-            <div
-              class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
-            >
-              <div>
-                <p
-                  class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
-                >
-                  Cantidad de dinero
-                </p>
-                <input class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="number"
+            <h3 style="color: #ffffff;">Nombre:</h3>
+            <input class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
+                  style="
+                  width: 100%;
+                  padding: .7em;
+                  border: none;
+                  background: none;
+                  outline: 0;
+                  color: #ffffff;
+                  border-bottom: 1px solid #fdfdfd;
+                  "
+              ><br>
+            <h3 style="color: #ffffff;">Origen:</h3>
+            <input class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
+                  style="
+                  width: 100%;
+                  padding: .7em;
+                  border: none;
+                  background: none;
+                  outline: 0;
+                  color: #ffffff;
+                  border-bottom: 1px solid #fdfdfd;
+                  "
+              ><br>
+            <h3 style="color: #ffffff;">Cantidad de dinero:</h3>
+            <input class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="number"
                   style="
                   background: none; width: 100%;
                   padding: .7em;
@@ -884,41 +895,17 @@
                   outline: 0;
                   color: #ffffff;
                   border-bottom: 1px solid #fdfdfd;
-                  ">
-              </div>
+                  "
+              ><br>
+            <h3 style="color: #ffffff;">Tipo de registro:</h3>
+            <div>
+              <input type="radio" name="Gasto" id="gasto">
+              <label class="text-lg font-semibold text-gray-700 dark:text-gray-200" for="label_gasto">Gasto</label><br>
+              <input type="radio" name="Ingreso" id="ingreso">
+              <label class="text-lg font-semibold text-gray-700 dark:text-gray-200">Ingreso</label><br><br>
             </div>
-            <!-- Card -->
-            <div
-              class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
-            >
-              
-              <div>
-                <p
-                  class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
-                >
-                Tipo de registro
-                </p>
-                <div class="radio_opcion">
-                    <input type="radio" name="Gasto" id="gasto">
-                    <label class="text-lg font-semibold text-gray-700 dark:text-gray-200" for="label_gasto">Gasto</label><br>
-                    <input type="radio" name="Ingreso" id="ingreso">
-                    <label class="text-lg font-semibold text-gray-700 dark:text-gray-200">Ingreso</label><br>
-                </div>
-                
-              </div>
-            </div>
-            <!-- Card -->
-            <div
-              class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
-            >
-              
-              <div>
-                <p
-                  class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
-                >
-                  Categoria
-                </p>
-                <input class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
+            <h3 style="color: #ffffff;">Categoria:</h3>
+            <input class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
                   style="
                   width: 100%;
                   padding: .7em;
@@ -927,38 +914,26 @@
                   outline: 0;
                   color: #ffffff;
                   border-bottom: 1px solid #fdfdfd;
-                  ">
-              </div>
-            </div>
-
-            <!-- Card -->
-            <div
-              class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
-            >
-              
-              <div>
-                <p
-                  class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
-                >
-                  Tipo de divisa
-                </p>
-                <input class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
-                  style=" 
-                  width: 100%;
-                  padding: .7em;
-                  border: none;
-                  background: none;
-                  outline: 0;
-                  color: #ffffff;
-                  border-bottom: 1px solid #ffffff;">
-              </div>
-            </div>
+                  "
+              ><br>
+            <h3 style="color: #ffffff;">Tipo de divisa:</h3>
+            <input class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
+                    style="
+                    width: 100%;
+                    padding: .7em;
+                    border: none;
+                    background: none;
+                    outline: 0;
+                    color: #ffffff;
+                    border-bottom: 1px solid #fdfdfd;
+                    "
+                ><br><br>
             <div style="align-items: center;">
                 <a style="
                 color: #000000;
                 padding: 15px;
                 background-color: #ffffff;" href="../ebook-app/dashboard.html">Guardar registro
-                </a>
+                </a><br><br><br>
             </div>
             
           </div>
