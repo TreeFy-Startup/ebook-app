@@ -24,6 +24,8 @@
     ></script>
     <script src="./js/charts-lines.js" defer></script>
     <script src="./js/charts-pie.js" defer></script>
+    <script src="./js/code.js" defer></script>
+    <!--tailwind.css-->
   </head>
   <body>
     <div
@@ -975,6 +977,17 @@
               </div>
             </div>
 
+            <label style="color: #FFFFFF; align-items: flex-start;">Buscar por filtros:</label>
+            <input style="
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: none;
+            outline: 0;
+            color: #ffffff;
+            border-bottom: 1px solid #fdfdfd;
+            " 
+            type="text" id="busqueda-registro" placeholder="Busca por nombre u origen.." onkeyup="busqueda_registros()"><br>
             <!-- New Table -->
             <div class="w-full overflow-hidden rounded-lg shadow-xs">
               <div class="w-full overflow-x-auto">
@@ -991,13 +1004,14 @@
                   </thead>
                   <tbody
                     class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
+                    id="objeto-registrados"
                   >
-                    <tr class="text-gray-700 dark:text-gray-400">
+                    <tr class="text-gray-700 dark:text-gray-400" id="objeto-registrado">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
                           
                           <div>
-                            <p class="font-semibold">Venta de mercancía a clientes</p>
+                            <p class="font-semibold" id="nombre-objeto">Venta de mercancía a clientes</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Área de ventas
                             </p>
@@ -1019,13 +1033,13 @@
                       </td>
                     </tr>
 
-                    <tr class="text-gray-700 dark:text-gray-400">
+                    <tr class="text-gray-700 dark:text-gray-400" id="objeto-registrado">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
                           <!-- Avatar with inset shadow -->
                           
                           <div>
-                            <p class="font-semibold">Electricidad</p>
+                            <p class="font-semibold" id="nombre-objeto">Electricidad</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Compañía de electricidad
                             </p>
@@ -1047,13 +1061,13 @@
                       </td>
                     </tr>
 
-                    <tr class="text-gray-700 dark:text-gray-400">
+                    <tr class="text-gray-700 dark:text-gray-400" id="objeto-registrado">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
                           <!-- Avatar with inset shadow -->
                           
                           <div>
-                            <p class="font-semibold">Internet</p>
+                            <p class="font-semibold" id="nombre-objeto">Internet</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Compañía de internet.
                             </p>
@@ -1075,13 +1089,13 @@
                       </td>
                     </tr>
 
-                    <tr class="text-gray-700 dark:text-gray-400">
+                    <tr class="text-gray-700 dark:text-gray-400" id="objeto-registrado">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
                           <!-- Avatar with inset shadow -->
                           
                           <div>
-                            <p class="font-semibold">Sueldo personal</p>
+                            <p class="font-semibold" id="nombre-objeto">Sueldo personal</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Trabajo X
                             </p>
@@ -1103,13 +1117,13 @@
                       </td>
                     </tr>
 
-                    <tr class="text-gray-700 dark:text-gray-400">
+                    <tr class="text-gray-700 dark:text-gray-400" id="objeto-registrado">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
                           <!-- Avatar with inset shadow -->
                           
                           <div>
-                            <p class="font-semibold">Pasaje total</p>
+                            <p class="font-semibold" id="nombre-objeto">Pasaje total</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Transporte
                             </p>
@@ -1131,13 +1145,13 @@
                       </td>
                     </tr>
 
-                    <tr class="text-gray-700 dark:text-gray-400">
+                    <tr class="text-gray-700 dark:text-gray-400" id="objeto-registrado">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
                           <!-- Avatar with inset shadow -->
                           
                           <div>
-                            <p class="font-semibold">Préstamo</p>
+                            <p class="font-semibold" id="nombre-objeto">Préstamo</p>
                             <p class="text-xs text-gray-600 dark:text-gray-400">
                               Préstamo familiar
                             </p>
