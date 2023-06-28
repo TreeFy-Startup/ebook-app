@@ -92,3 +92,20 @@ input[type="submit"] {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  table th {
+    font-weight: bold;
+  }
+  

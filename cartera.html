@@ -844,7 +844,7 @@
               Operaciones
             </h2>
             <!-- Operaciones botones -->
-            <!--  -->
+            <!-- Formulario de Registro -->
             <div class="box">
               <a class="button" href="#divOne">Nueva cuenta</a>
             </div>
@@ -853,15 +853,15 @@
                 <h2>Complete el formulario</h2><a class="close" href="#">&times;</a>
                 <div class="content">
                   <div class="containeer">
-                    <form>
-                      <label>Nombre</label>
+                    <form id="cardsForm">
+                      <label>Nombre Completo</label>
                       <input placeholder="Your name.." type="text">
-                      <label>Apellido</label>
-                      <input placeholder="Your last name.." type="text">
-                      <label>Banco</label>
-                      <input placeholder="..." type="text">
+                      <label  for="nombreBanco">Banco</label>
+                      <input type="text" id="nombreBanco" name="nombreBanco" required>
                       <label>Numero de cuenta</label>
-                      <input placeholder="..." type="text">
+                      <input type="text" id="numeroCuenta" name="numeroCuenta" required>
+                      <label for="saldo" >Saldo</label>
+                      <input placeholder="..." type="text" id="saldo" name="saldo" required>
                       <input type="submit" value="Guardar">
                     </form>
                   </div>
@@ -955,11 +955,24 @@
                 </div>
               </div>
             </div>
-            <script src="js/script.js"></script>
-                       
+            <!-- Tabla -->
+            <table id="cardsTable" style="color:#f5a8f5">
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Saldo</th>
+                </tr>
+              </thead>
+              <tbody id="cardsTableBody">
+                <!-- Los productos se generarán dinámicamente desde JavaScript -->
+                
+
+              </tbody>
+            </table>         
           </div>
         </main>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,16 +1,25 @@
 {
   "posts": [
     {
-      "id": 1,
       "title": "json-server",
       "author": "typicode"
     }
   ],
-  "comments": [
+  "tarjetas": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nombre": "Banco de Credito del Peru",
+      "saldo": 1500
+    },
+    {
+      "id": 2,
+      "nombre": "Banco Pichincha",
+      "saldo": 200
+    },
+    {
+      "nombre": "Banco X",
+      "saldo": "123",
+      "id": 3
     }
   ],
   "profile": {
