@@ -844,29 +844,30 @@
               Operaciones
             </h2>
             <!-- Operaciones botones -->
-            <div
-              class="flex flex-col flex-wrap mb-4 space-y-4 md:flex-row md:items-end md:space-x-4"
-            >
-              
-              <!-- Botonwa -->
-              <div>
-                <button
-                  class="px-5 py-3 font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                >
-                  Nueva cuenta
-                </button>
-              </div>
-              <div>
-                <button
-                  class="px-5 py-3 font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple"
-                >
-                Nueva tarjeta
-                </button>
-              </div>
-              
+            <!--  -->
+            <div class="box">
+              <a class="button" href="#divOne">Nueva cuenta</a>
             </div>
-            
-            
+            <div class="overlay" id="divOne">
+              <div class="wrapper">
+                <h2>Complete el formulario</h2><a class="close" href="#">&times;</a>
+                <div class="content">
+                  <div class="containeer">
+                    <form>
+                      <label>Nombre</label>
+                      <input placeholder="Your name.." type="text">
+                      <label>Apellido</label>
+                      <input placeholder="Your last name.." type="text">
+                      <label>Banco</label>
+                      <input placeholder="..." type="text">
+                      <label>Numero de cuenta</label>
+                      <input placeholder="..." type="text">
+                      <input type="submit" value="Guardar">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Cards -->
             <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
               <!-- Card -->
@@ -954,113 +955,8 @@
                 </div>
               </div>
             </div>
-
-            <!-- New Table -->
-            <div class="w-full overflow-hidden rounded-lg shadow-xs">
-              <div class="w-full overflow-x-auto">
-                <table class="w-full whitespace-no-wrap">
-                  <thead>
-                    <tr
-                      class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800"
-                    >
-                      <th class="px-4 py-3">Nombre</th>
-                      <th class="px-4 py-3">Total</th>
-                      <th class="px-4 py-3">Tipo</th>
-                      <th class="px-4 py-3">Acción</th>
-                    </tr>
-                  </thead>
-                  <tbody
-                    class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800"
-                  >
-                    <tr class="text-gray-700 dark:text-gray-400">
-                      <td class="px-4 py-3">
-                        <div class="flex items-center text-sm">
-                          
-                          <div>
-                            <p class="font-semibold">Banco de Crédito del Perú</p>
-                            <p class="text-xs text-gray-600 dark:text-gray-400">
-                              de ahorros **4426
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        S/.403.45
-                      </td>
-                      <td class="px-4 py-3 text-xs">
-                        <span
-                          class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100"
-                        >
-                          Ingreso moderado
-                        </span>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        6/10/2020
-                      </td>
-                    </tr>
-
-                    <tr class="text-gray-700 dark:text-gray-400">
-                      <td class="px-4 py-3">
-                        <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
-                          
-                          <div>
-                            <p class="font-semibold"> Banco Bilbao Vizcaya Argentaria</p>
-                            <p class="text-xs text-gray-600 dark:text-gray-400">
-                                de ahorros **4468
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        S/.169.95
-                      </td>
-                      <td class="px-4 py-3 text-xs">
-                        <span
-                          class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-orange-100 rounded-full dark:text-white dark:bg-orange-600"
-                        >
-                          Gasto moderado
-                        </span>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        6/10/2020
-                      </td>
-                    </tr>
-
-                    <tr class="text-gray-700 dark:text-gray-400">
-                      <td class="px-4 py-3">
-                        <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
-                          
-                          <div>
-                            <p class="font-semibold">Tarjeta Oh!</p>
-                            <p class="text-xs text-gray-600 dark:text-gray-400">
-                                de crédito **6548
-                            </p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        S/.486.00
-                      </td>
-                      <td class="px-4 py-3 text-xs">
-                        <span
-                          class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-700"
-                        >
-                          Gasto obligatorio
-                        </span>
-                      </td>
-                      <td class="px-4 py-3 text-sm">
-                        6/10/2020
-                      </td>
-                    </tr>
-
-                    
-                  </tbody>
-                </table>
-              </div>
-             
-            </div>           
+            <script src="js/script.js"></script>
+                       
           </div>
         </main>
       </div>
