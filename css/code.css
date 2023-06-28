@@ -1,0 +1,9 @@
+.filter {
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
+#objetos-registrados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}

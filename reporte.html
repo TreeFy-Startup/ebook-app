@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Treefy</title>
+    <title>Dashboard</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -22,10 +22,11 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       defer
     ></script>
-    <link rel="stylesheet" href="./css/code.css">
     <script src="./js/charts-lines.js" defer></script>
     <script src="./js/charts-pie.js" defer></script>
-    <script src="./js/code.js" defer></script>
+    <link rel="stylesheet" href="./css/code.css"/>
+    <script src="./js/code.js"></script>
+    <!--tailwind.css-->
   </head>
   <body>
     <div
@@ -164,7 +165,7 @@
             <li class="relative px-6 py-3">
               <a
                 class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                href="buttons.html"
+                href="./reporte.html"
               >
                 <svg
                   class="w-5 h-5"
@@ -858,87 +859,14 @@
         </header>
         <main class="h-full overflow-y-auto">
           <div class="container px-6 mx-auto grid">
-            <h2 style="padding-bottom: 10px;"
+            <h2
               class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
             >
-              Registro
+              Inversión y Consejos
             </h2>
-            <h3 style="color: #ffffff;">Nombre:</h3>
-            <input id="text_nombre" class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
-                  style="
-                  width: 100%;
-                  padding: .7em;
-                  border: none;
-                  background: none;
-                  outline: 0;
-                  color: #ffffff;
-                  border-bottom: 1px solid #fdfdfd;
-                  "
-              ><br>
-            <h3 style="color: #ffffff;">Origen:</h3>
-            <input id="text_origen" class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
-                  style="
-                  width: 100%;
-                  padding: .7em;
-                  border: none;
-                  background: none;
-                  outline: 0;
-                  color: #ffffff;
-                  border-bottom: 1px solid #fdfdfd;
-                  "
-              ><br>
-            <h3 style="color: #ffffff;">Cantidad de dinero:</h3>
-            <input id="text_dinero" class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="number"
-                  style="
-                  background: none; width: 100%;
-                  padding: .7em;
-                  border: none;
-                  background: none;
-                  outline: 0;
-                  color: #ffffff;
-                  border-bottom: 1px solid #fdfdfd;
-                  "
-              ><br>
-            <h3 style="color: #ffffff;">Tipo de registro:</h3>
-            <div>
-              <input type="radio" value="Gasto" id="bool_gasto">
-              <label class="text-lg font-semibold text-gray-700 dark:text-gray-200" for="label_gasto">Gasto</label><br>
-              <input type="radio" value="Ingreso" id="bool_ingreso">
-              <label class="text-lg font-semibold text-gray-700 dark:text-gray-200">Ingreso</label><br><br>
-            </div>
-            <h3 style="color: #ffffff;">Categoria:</h3>
-            <input id="text_categoria" class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
-                  style="
-                  width: 100%;
-                  padding: .7em;
-                  border: none;
-                  background: none;
-                  outline: 0;
-                  color: #ffffff;
-                  border-bottom: 1px solid #fdfdfd;
-                  "
-              ><br>
-            <h3 style="color: #ffffff;">Tipo de divisa:</h3>
-            <input id="text_divisa" class="text-lg font-semibold text-gray-700 dark:text-gray-200" type="text"
-                    style="
-                    width: 100%;
-                    padding: .7em;
-                    border: none;
-                    background: none;
-                    outline: 0;
-                    color: #ffffff;
-                    border-bottom: 1px solid #fdfdfd;
-                    "
-                ><br><br>
-            <div style="align-items: center;">
-                <a onclick="agregar_registro()"
-                style="
-                color: #000000;
-                padding: 15px;
-                background-color: #ffffff;" href="../ebook-app/dashboard.html">Guardar registro
-                </a><br><br><br>
-            </div>
-            
+            <label style="color: #FFFFFF; align-items: flex-start;">
+                Construye tu fortuna..
+            </label>
           </div>
         </main>
       </div>
