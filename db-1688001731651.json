@@ -32,29 +32,6 @@
       "id": 5
     }
   ],
-  "registros": [
-    {
-      "id": 1,
-      "nombre": "Venta de mercancia a clientes",
-      "dinero": "403.45",
-      "tipo": "Ingreso",
-      "categoria": "Ventas"
-    },
-    {
-      "id": 2,
-      "nombre": "Electricidad",
-      "dinero": "169.95",
-      "tipo": "Gasto",
-      "categoria": ""
-    },
-    {
-      "id": 3,
-      "nombre": "Internet",
-      "dinero": "486.00",
-      "tipo": "Gasto",
-      "categoria": ""
-    }
-  ],
   "profile": {
     "name": "typicode"
   }
