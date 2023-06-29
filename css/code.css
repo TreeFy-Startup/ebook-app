@@ -18,6 +18,11 @@
 	background: #990f87;
 	border-radius: 50px;
 }
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
 .overlay {
 	position: fixed;
 	top: 0;
@@ -29,10 +34,7 @@
 	visibility: hidden;
 	opacity: 0;
 }
-.overlay:target {
-	visibility: visible;
-	opacity: 1;
-}
+
 .wrapper {
 	margin: 70px auto;
 	padding: 20px;
